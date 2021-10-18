@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+  <TextView
+      android:id="@+id/title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="MAIN_FRAGMENT"
+      app:layout_constraintBottom_toTopOf="@id/toTitleButton"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+  <Button
+      android:id="@+id/toTitleButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Title へ"
+      app:layout_constraintBottom_toTopOf="@id/toResultButton"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/title" />
+  <Button
+      android:id="@+id/toResultButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Result へ"
+      app:layout_constraintBottom_toTopOf="@id/finishButton"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/toTitleButton" />
+
+  <Button
+      android:id="@+id/finishButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="終わる"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/toResultButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
